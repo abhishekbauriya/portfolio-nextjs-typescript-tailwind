@@ -1,15 +1,15 @@
-import {AiFillGithub, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai';
-import {GoLocation} from 'react-icons/go';
+import {AiFillGithub, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai'
+import {GoLocation} from 'react-icons/go'
 import { GiTie } from 'react-icons/gi'
 
 const Sidebar = () => {
     return (
-        <div>
+        <>
             <img
-                src='https://avatars.githubusercontent.com/u/76206667?s=460&u=af895dfe3d83f597a70c6e95df8a07848329ea9d&v=4' alt='user avatar'
-                className='w-32 h-32 rounded-full max-auto'
+                src='https://avatars.githubusercontent.com/u/76206667?s=460&u=af895dfe3d83f597a70c6e95df8a07848329ea9d&v=4' alt='avatar'
+                className='w-32 h-32 border rounded-full max-auto'
             />
-            <h3 className='my-4 font-medium tracking-wider text-3x1 font-kaushan'>
+            <h3 className='my-4 text-3xl font-medium tracking-wider font-kaushan'>
                 <span className='text-green'>Abhishek </span>
                 Bauriya
             </h3>
@@ -40,14 +40,14 @@ const Sidebar = () => {
                     <GoLocation />
                     <span>Mumbai, India</span>
                 </div>
-                <p className='my-2 className='>abhishekbauriya007@gmial.com</p>
+                <p className='my-2'>abhishekbauriya007@gmial.com</p>
                 {/* <p>Phone NO.</p> */}
             </div>
 
             {/* Email Button, Toggle Theme */}
             <button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400 focus:outline-none' onClick={()=>window.open('mailto:abhishekbauriya007@gmail.com')}>Email Me</button>
             <button className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green to-blue-400'>Toggle Theme</button>
-        </div>
+        </>
     )
 }
 
