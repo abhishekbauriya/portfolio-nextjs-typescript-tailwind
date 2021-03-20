@@ -7,7 +7,7 @@ const Sidebar = () => {
         <>
             <img
                 src='https://avatars.githubusercontent.com/u/76206667?s=460&u=af895dfe3d83f597a70c6e95df8a07848329ea9d&v=4' alt='avatar'
-                className='w-32 h-32 border rounded-full max-auto'
+                className='w-32 h-32 mx-auto border rounded-full'
             />
             <h3 className='my-4 text-3xl font-medium tracking-wider font-kaushan'>
                 <span className='text-green'>Abhishek </span>

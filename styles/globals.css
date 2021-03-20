@@ -6,11 +6,12 @@
 body {
     background-color: black;
     font-family: sans-serif;
+    color: #354358;
 }
 
 
 /* ******************Custom CSS Added******************** */
-
+/* Remove this if you want Responsive */
 
 /* Sidebar to Extend */
 .col-span-12.p-4.text-center.bg-white.lg\:col-span-3.rounded-2xl {
@@ -21,4 +22,19 @@ body {
 .grid.grid-cols-12.gap-6.px-5.lg\:px-48.my-14.sm\:px-20.md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+}
+
+/* Name color changed */
+span.text-green {
+    color: #ff4d5a;
+}
+
+/* Social Icons color changed */
+svg.w-8.h-8.cursor-pointer {
+    color: #ff4d5a;
+}
+
+/* Some Symbol Color Changed */
+svg.w-12.h-12.text-green {
+    color: crimson;
 }

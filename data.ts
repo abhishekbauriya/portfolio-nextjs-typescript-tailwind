@@ -2,9 +2,9 @@ import { RiComputerLine } from 'react-icons/ri'
 import { FaServer } from 'react-icons/fa'
 import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai'
 import { MdDeveloperMode } from 'react-icons/md'
-import { IService } from './type'
+import { IService, ISkill } from './type'
 
-// import { BsCircleFill } from 'react-icons/bs'
+import { BsCircleFill } from 'react-icons/bs'
 
 export const services: IService[] = [
    {
@@ -45,58 +45,53 @@ export const services: IService[] = [
    },
 ]
 
-// export const languages: Skill[] = [
-//    {
-//       Icon: BsCircleFill,
-//       name: 'Python',
-//       level: '45',
-//    },
-//    {
-//       Icon: BsCircleFill,
-//       name: 'Java Script',
-//       level: '60',
-//    },
-//    {
-//       Icon: BsCircleFill,
-//       name: 'React Native',
-//       level: '80',
-//    },
-//    {
-//       Icon: BsCircleFill,
-//       name: 'React',
-//       level: '70',
-//    },
-//    {
-//       Icon: BsCircleFill,
-//       name: 'Django',
-//       level: '80',
-//    },
-//    {
-//       Icon: BsCircleFill,
-//       name: 'Bootstrap',
-//       level: '80',
-//    },
-// ]
+export const languages: ISkill[] = [
+   {
+      Icon: BsCircleFill,
+      name: 'Python',
+      level: '45',
+   },
+   {
+      Icon: BsCircleFill,
+      name: 'Django',
+      level: '45',
+   },
+   {
+      Icon: BsCircleFill,
+      name: 'ReactJs',
+      level: '55',
+   },
+   {
+      Icon: BsCircleFill,
+      name: 'React Native',
+      level: '50',
+   },
+   {
+      Icon: BsCircleFill,
+      name: 'Bootstrap',
+      level: '30',
+   },
+   {
+      Icon: BsCircleFill,
+      name: 'MySQL',
+      level: '30',
+   },
+]
 
-// export const tools: Skill[] = [
-//    {
-//       Icon: BsCircleFill,
-//       name: 'Figma',
-//       level: '85',
-//    },
-//    {
-//       Icon: BsCircleFill,
-//       name: 'Photoshop',
-//       level: '45',
-//    },
-//    {
-//       Icon: BsCircleFill,
-//       name: 'Illustrator',
-//       level: '60',
-//    },
-//    {
-//       Icon: BsCircleFill,
-//       name: 'Framer',
-//       level: '45',
-//    },
-// ]
+export const tools: ISkill[] = [
+   {
+      Icon: BsCircleFill,
+      name: 'Communication',
+      level: '95',
+   },
+   {
+      Icon: BsCircleFill,
+      name: 'Teamwork',
+      level: '85',
+   },
+   {
+      Icon: BsCircleFill,
+      name: 'Problem Solving',
+      level: '85',
+   },
+]
