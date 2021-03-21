@@ -1,19 +1,21 @@
+import { motion } from "framer-motion";
 import {
   GetServerSideProps,
   GetServerSidePropsContext,
   GetStaticProps,
   GetStaticPropsContext,
   NextPage,
-} from "next"
-import ServiceCard from "../components/ServiceCard"
-import { services } from "../data"
-import { Service } from "../types"
+} from "next";
+import { fadeInUp, stagger, routeAnimation } from "../animations";
+import ServiceCard from "../components/ServiceCard";
+import { services } from "../data";
+import { Service } from "../types";
 
 const About: NextPage = () => {
-  console.log(services)
+  console.log(services);
 
   return (
-     <div className="flex flex-col flex-grow px-6 pt-1 ">
+     <motion.div className="flex flex-col flex-grow px-6 pt-1 " variants={routeAnimation} initial="initial" animate="animate" exit="exit">
         <h6 className="my-3 text-base font-medium">
            I am currently pursuing B.Tech Degree(Final Year) in Computer
            Science Engineering from Academy of Technology. I have 3+ years of
@@ -28,21 +30,22 @@ const About: NextPage = () => {
               What I am doing
            </h4>
 
-           <div className="grid gap-6 my-3 md:grid-cols-2">
+           <motion.div className="grid gap-6 my-3 md:grid-cols-2" variants={stagger} initial="initial" animate="animate">
               {/* children's initial and animate property should be same as the parent during a stagger effect  */}
-              {services.map(service => (
-                 <div
+              {services.map((service) => (
+                 <motion.div
                     className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-black-200 md:col-span-1 "
                     key={service.title}
+                    variants={fadeInUp}
                   >
                     <ServiceCard service={service} />
-                 </div>
+                 </motion.div>
               ))}
-           </div>
+           </motion.div>
         </div>
-     </div>
-  )
-}
+     </motion.div>
+  );
+};
 
 //!called every time  the page refreshed
 // export const getServerSideProps: GetServerSideProps = async (
