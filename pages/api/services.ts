@@ -1,9 +1,12 @@
-import { NextApiRequest, NextApiResponse } from "next";
-import {services} from '../..data'
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default (req:NextApiRequest,res:NextApiResponse)=> {
-    
-    console.log(services)
-    
-    res.status(200).json({services})
+import { NextApiRequest, NextApiResponse } from "next"
+import { services } from "../../data"
+export default (req: NextApiRequest, res: NextApiResponse) => {
+   //BY default get request
+
+   //! complex backend logic :(
+   console.log("API", services)
+
+   res.status(200).json({ services })
 }
