@@ -102,6 +102,7 @@ export const tools: Skill[] = [
 
 export const projects:IProject[] = [
    {
+      id: 0,
       name: "COVID Tracker",
       description:
          "This app shows a statistical view about corona virus over the world",
@@ -112,6 +113,7 @@ export const projects:IProject[] = [
       key_techs: ["React", "Chart.js", "Material UI"],
    },
    {
+      id: 7,
       name: "Algorithm Visualizer",
       //TODO add data
       image_path: "/images/algoVisual.png",
@@ -123,6 +125,7 @@ export const projects:IProject[] = [
       key_techs: ["React", "firebase", "Framer Motion"],
    },
    {
+      id: 1,
       name: "Dev Talks",
       image_path: "/images/dev.jpg",
       deployed_url: "https://dev-talks.herokuapp.com/",
@@ -133,6 +136,7 @@ export const projects:IProject[] = [
       key_techs: ["React", "Redux", "Node", "Express", "Mongo", "REST API", "Bootstrap",],
    },
    {
+      name: 2,
       name: "Realtime Chat App",
       image_path: "/images/chatapp.jpg",
       deployed_url: "https://sumit-chat.netlify.app/",
@@ -144,6 +148,7 @@ export const projects:IProject[] = [
       key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
    },
    {
+      id: 3,
       name: "Tweeter Clone",
       image_path: "/images/tweetme.jpg",
       deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
@@ -153,7 +158,8 @@ export const projects:IProject[] = [
          "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
       key_techs: ["React", "Django", "Django REST API"],
    },
-   {
+   {  
+      id: 4,
       name: "Dev Portfolio",
       image_path: "/images/portfolio.jpg",
       deployed_url: "http://suprateem.herokuapp.com/",
@@ -162,7 +168,8 @@ export const projects:IProject[] = [
       description: "Hey, You are seeing this project now...Enjoy",
       key_techs: ["Next.js", "Framer Motion", "TypeScript", "Tailwind"],
    },
-   {
+   { 
+      id: 5,
       name: "Color Classification using tf.js",
       image_path: "/images/color.jpg",
       deployed_url: "!#",
@@ -173,6 +180,7 @@ export const projects:IProject[] = [
       key_techs: ["MERN", "TensorFlow.js", "Vanilla js"],
    },
    {
+      id: 6,
       name: "YouTube using YouTube ",
       image_path: "/images/youtubeClone.png",
       deployed_url: "https://not-utube.web.app/",
@@ -183,6 +191,7 @@ export const projects:IProject[] = [
       key_techs: ["React", "Redux", "Firebase Auth", "YouTube API", "Sass", "Bootstrap",],
    },
    {
+      id: 9,
       name: "Football App",
       //TODO add image,github,dep url
       image_path: "/images/football.png",
