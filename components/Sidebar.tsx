@@ -31,7 +31,7 @@ const Sidebar = () => {
             
             {/* Resume */}
             <a 
-                href=""
+                href="/assets/Abhishek Bauriya Resume.pdf"
                 download="Abhishek Bauriya Resume.pdf"
                 className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full cursor-pointer dark:bg-black-500"
             > 
